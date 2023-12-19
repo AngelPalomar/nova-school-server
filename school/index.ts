@@ -1,5 +1,5 @@
 import * as mongoose from "mongoose";
-import routeHandler from "./src/routes";
+import routeHandler from "./src/routes/RoleRoutes";
 
 const port = process.env.PORT;
 const host = process.env.HOST;
@@ -13,8 +13,6 @@ const server = Bun.serve({
     const { method, url } = req;
     const { pathname } = new URL(url);
     const handlers = routeHandler(req);
-
-    console.log(handlers)
 
     await mongoose.connect(db_url ?? '');
     return new Response("");

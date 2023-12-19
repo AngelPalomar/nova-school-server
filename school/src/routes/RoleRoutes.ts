@@ -1,4 +1,4 @@
-import RoleController from "./controllers/RoleController"
+import RoleController from "../controllers/RoleController"
 
 const roleController = new RoleController();
 
@@ -8,6 +8,6 @@ const routeHandler = (req: Request) => (
       GET: () => roleController.get(req),
     }
   }
-);
+)
 
 export default routeHandler;
