@@ -1,0 +1,19 @@
+{
+  "name": "school",
+  "version": "1.0.0",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "scripts": {
+    "start": "bun index.ts",
+    "dev": "bun run --watch index.ts"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "mongoose": "^8.0.3"
+  }
+}
